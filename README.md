@@ -1,18 +1,3 @@
-# dealer
-
-## Setup
-```sh
-# Install dependencies
-pipenv install --dev
-
-# Setup pre-commit and pre-push hooks
-pipenv run pre-commit install -t pre-commit
-pipenv run pre-commit install -t pre-push
-```
-
-## Credits
-This package was created with Cookiecutter and the [sourcery-ai/python-best-practices-cookiecutter](https://github.com/sourcery-ai/python-best-practices-cookiecutter) project template.
-
 # Dealer
 
 <a href="https://github.com/psf/black/blob/main/LICENSE"><img alt="License: MIT" src="https://black.readthedocs.io/en/stable/_static/license.svg"></a>
@@ -25,7 +10,7 @@ This package was created with Cookiecutter and the [sourcery-ai/python-best-prac
 ## Installation & Usage
 
 ### Installation
-_Dealer_ can be installed by running 
+[Dealer] can be installed by running 
 
 ```pip install git+https://github.com/salaubacher/dealer```
 
@@ -33,4 +18,25 @@ It requires Python 3.7.0+ to run.
 
 ### Usage
 ```python
-from dealer import PokerDeck
+from dealer.poker_deck import PokerDeck
+
+mydeck = PokerDeck()
+mydeck.shuffle()
+for i in range(53):
+    print(mydeck.deal_one_card())
+```
+
+## Contributing
+```sh
+# Install dependencies
+pipenv install --dev
+
+# Setup pre-commit and pre-push hooks
+pipenv run pre-commit install -t pre-commit
+pipenv run pre-commit install -t pre-push
+```
+
+## Credits
+This package was created with Cookiecutter and the [sourcery-ai/python-best-practices-cookiecutter](https://github.com/sourcery-ai/python-best-practices-cookiecutter) project template.
+
+[Dealer]:https://github.com/salaubacher/dealer

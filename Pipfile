@@ -13,10 +13,10 @@ coverage="pytest --cov-report term-missing --cov=dealer tests"
 [packages]
 
 [dev-packages]
-black = "==20.8b1"
 flake8 = "*"
 isort = "*"
 mypy = "*"
 pre-commit = "*"
 pytest = "*"
 pytest-cov = "*"
+black = "*"
