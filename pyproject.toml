@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "dealer"
 version = "0.0.1"
@@ -14,9 +18,7 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/salaubacher/dealer"
 "Bug Tracker" = "https://github.com/salaubacher/dealer/issues"
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+
 [tool.pytest.ini_options]
 pythonpath = [
   "dealer", "test"
