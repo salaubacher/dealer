@@ -2,6 +2,11 @@ from dealer.poker_deck import PokerDeck
 
 
 class TestPokerDeck:
+    def test_card_count(self):
+        poker_deck = PokerDeck()
+        print("testing Card Count")
+        assert poker_deck.card_count() == 52
+
     def test_deal_one_card(self):
         poker_deck = PokerDeck()
         print("testing deal one card")
@@ -22,11 +27,6 @@ class TestPokerDeck:
         print("testing shuffle")
         poker_deck.shuffle()
         assert poker_deck != unshuffled
-
-    def test_card_count(self):
-        poker_deck = PokerDeck()
-        print("testing Card Count")
-        assert poker_deck.card_count() == 52
 
     def test_deal_all(self):
         poker_deck = PokerDeck()
